@@ -1,2 +1,2 @@
 # TechnitiumDHCPServerAPI
-Uses API calls to import DHCP reservations indivisually or via CSV file into Technitium
+Uses API calls to import DHCP reservations individually or via CSV file into Technitium. Sample CSV File is available
