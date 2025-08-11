@@ -1,0 +1,23 @@
+1.) Put Items in same folder together EXAMPLE: C:\Scripts\TechnitiumDHCP
+
+2) Install PS2EXE (if not installed)
+Open PowerShell and run as admin:
+
+Install-Module PS2EXE -Scope CurrentUser -Force
+
+3) Build the EXE
+
+Paster in PowerShell:
+
+cd "C:\Scripts\TechnitiumDHCP"
+powershell -NoProfile -ExecutionPolicy Bypass -File ".\Build-TechnitiumDHCP-EXE_Compat.ps1"
+
+4) Run your EXE
+
+
+You will need to generate an API Key via the Technitium Server. Also, make certain that the DHCP Scope name is EXACTLY the same that you have entered into the server. There is also an excel file to use as a template for the import if you need to add a large amount of leases.
+
+If you have Enable DNS Updates on and the PTR APP installed, you can create PTR records by simply importing a list of IP's, or you can use the DHCP Server as a form of DHCP authorization server and only allow leases that you have added.  
+
+*KNOWN ISSUES*
+After adding an individual address or an import, the program will need to be closed and then reopened. The credential boxes "time-out" or something. Your mileage may vary
